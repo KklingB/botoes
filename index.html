@@ -16,10 +16,10 @@
       elemento.classList.toggle("texto");}
         function changeImage() {
             let img = document.getElementById("myImage");
-            if (img.src.match("noite")) {
-                img.src = "dia.webp";} 
+            if (img.src.match("dia")) {
+                img.src = "noite.webp";} 
             else {
-                img.src = "noite.webp";}}
+                img.src = "dia.webp";}}
 
     </script>
 </head>
@@ -28,7 +28,7 @@
     <button onclick="horas()">Mostrar Data e Hora</button>
     <p id="datetime"></p>
     <p id="tex">Dia e Noite se completam</p>
-    <p><button onclick="text()" onclick="changeImage()">noite e dia</button></p>
-    <img id="myImage" src="noite.webp" style="width:200px">
+    <p><button onclick="text()">noite e dia</button><button onclick="changeImage()">noite e dia</button></p>
+    <img id="myImage" src="dia.webp" style="width:200px">
 </body>
 </html>
