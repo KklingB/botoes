@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World</title>
+    <script>
+        function HelloWorld() {
+            alert("Hello, World!");}
+        function horas() {
+            let now = new Date();
+            document.getElementById("datetime").innerHTML = now.toString();}
+    </script>
+</head>
+<body>
+    <button onclick="HelloWorld()">Click Me</button>
+    <button onclick="horas()">Mostrar Data e Hora</button>
+    <p id="datetime"></p>
+</body>
+</html>
